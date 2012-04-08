@@ -43,7 +43,7 @@ app.use (req, res) ->
 	console.log req.accept
 	res.end()
 
-http.createServer(app).listen 3000
+app.listen 3000
 ```
 
 A request from a browser on `http://localhost:3000` would print out
