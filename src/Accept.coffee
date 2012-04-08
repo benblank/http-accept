@@ -93,13 +93,13 @@ sortMediaType = (a, b) ->
 
 # Build middleware with parsers for several accept header fields.
 middleware = (req, res, next) ->
-	req.types     = parseAccept      req.headers.accept
-	req.charsets  = parseHeaderField req.headers['accept-charsets']
-	req.encodings = parseHeaderField req.headers['accept-encodings']
-	req.languages = parseHeaderField req.headers['accept-language']
-	req.ranges    = parseHeaderField req.headers['accept-ranges']
+	req.accept =
+		types:     parseAccept      req.headers.accept
+		charsets:  parseHeaderField req.headers['accept-charset']
+		encodings: parseHeaderField req.headers['accept-encoding']
+		languages: parseHeaderField req.headers['accept-language']
+		ranges:    parseHeaderField req.headers['accept-ranges']
 	next()
 
-module.exports =
-	accept: middleware
-	parser: parseHeaderField
+module.exports        = middleware
+module.exports.parser = parseHeaderField
