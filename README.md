@@ -48,7 +48,7 @@ http.createServer(app).listen 3000
 
 A request from a browser on `http://localhost:3000` would print out
 
-```json
+```javascript
 { types: 
    [ { type: 'text',
        subtype: 'html',
