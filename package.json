@@ -1,6 +1,6 @@
 {
 	"name": "http-accept",
-	"version": "0.1.0",
+	"version": "0.1.0-2",
 	"description": "Connect compatible middleware that parses HTTP Accept header fields",
 	"author": {
 		"name": "Niclas Hoyer",
