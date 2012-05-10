@@ -4,7 +4,7 @@
 	"description": "Connect compatible middleware that parses HTTP Accept header fields",
 	"author": {
 		"name": "Niclas Hoyer",
-		"email": "https://github.com/niclashoyer"
+		"url": "https://github.com/niclashoyer"
 	},
 	"files": [
 		"lib/"
@@ -12,7 +12,7 @@
 	"main": "lib/Accept.js",
 	"repository": {
 		"type": "git",
-		"url": "git://github.com/niclashoyer/accept-http.git"
+		"url": "git://github.com/niclashoyer/http-accept.git"
 	},
 	"licence": "MIT"
 }
